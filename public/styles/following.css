@@ -182,7 +182,7 @@
     margin: 10px 0;
     height: calc( 100% - 300px);
     position: absolute;
-    right: calc(1000px - 620px);
+    right: calc(50vw + 250px);
     top: 150px;
     border-radius: 30px;
 }
