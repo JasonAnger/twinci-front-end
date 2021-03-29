@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include('stylesForAll')%>
+  <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+  <link rel="stylesheet" href="styles/following.css" as="style" type="text/css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style"
+    type="text/css">
+  <title>Twinci - The first NFTs Social-Marketplace</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+</head>
+
+<body>
+  <%- include('navbar')%>
+  <!-- Video -->
+  <section id="scrollToTop" onclick="slideTo('top')">
+    <img class="lazyloaded" src="./images/BackToTop.png" alt="Back to top" />
+  </section>
+  <section id="following">
+    <div class="items-container">
+        <div class="items-row">
+            <%- include('onSaleItem', {id: "item1"}) %> 
+            <%- include('onSaleItem', {id: "item2"}) %> 
+            <%- include('onSaleItem', {id: "item3"}) %> 
+        </div>
+    </div>
+    <div id="banner"><h2>Coinmarketcap</h2></div>
+  </section>
+  <%- include('footer')%>
+  <style>
+    @font-face {
+      font-family: "UTM Avo";
+      src: local("UTM Avo Regular"),
+        url(../fonts/UTM-Avo.woff) format("woff");
+      font-weight: normal;
+      unicode-range: U+000-5FF;
+      font-style: swap;
+    }
+
+    @font-face {
+      font-family: "UTM Avo";
+      src: local("UTM Avo Bold"),
+        url(../fonts/UTM-AvoBold.woff) format("woff");
+      font-weight: bold;
+      unicode-range: U+000-5FF;
+      font-style: swap;
+    }
+
+
+    * {
+      text-rendering: optimizeLegibility;
+      font-family: "UTM Avo" !important;
+    }
+  </style>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+<script src="/js/main.js">
+</script>
+<script src="/js/anime.js"></script>
+</html>

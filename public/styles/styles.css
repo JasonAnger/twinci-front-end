@@ -1,0 +1,462 @@
+a {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  width: 100%;
+}
+
+#cover {
+  display: flex;
+  margin-top: 110px;
+  min-height: 900px;
+}
+.cover-image {
+  min-height: 100vh;
+  width: 100%;    
+  background-position: right top;
+  background-image: url(/images/vu\ tru.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#enter {
+  display: none;
+}
+#animeText {
+  color: #ffb124;
+}
+.typed-cursor {
+  color: #ffb124;
+}
+@keyframes changeColor {
+  0% {
+    color: #ffb124;
+  }
+  70% {
+    color: rgb(163, 184, 90);
+  }
+  100% {
+    color: #ffb124;
+  }
+}
+.cover-text-container {
+  position: absolute;
+  margin: 160px 10vw 0 7vw;
+  width: 30%;
+  z-index: 30;
+}
+
+.cover-text {
+  font-size: 48px;
+  line-height: 46px;
+  margin: 0;
+  color: rgb(46, 46, 46);
+}
+
+.cover-subtext {
+  color: rgb(141, 141, 141);
+  font-size: 20px;
+}
+
+.cover-buttons-container {
+  display: flex;
+}
+
+.button {
+  padding: 5px 20px 10px 20px;
+  border-radius: 100px;
+  border: 3px solid black;
+  font-size: 23px;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.connect {
+  padding: 5px 20px 10px 20px;
+  border-radius: 100px;
+  font-size: 23px;
+  text-decoration: none;
+  margin: 10px;
+  border: 3px solid #ffb124;
+  background-color: #ffb124;
+  color: white;
+}
+
+.connect:hover {
+  background-color: #ffb124;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.explore {
+  padding: 5px 20px 10px 20px;
+  border-radius: 100px;
+  font-size: 23px;
+  text-decoration: none;
+  margin: 10px;
+  border: 3px solid rgb(163, 184, 90);
+  color: rgb(163, 184, 90);
+}
+
+.explore:hover {
+  background-color: rgb(163, 184, 90);
+  color: white;
+  transition: all 0.3s ease;
+}
+.card-holder {
+  width: 65%;
+  height: 800px;
+  margin-left: 35%;
+  overflow: hidden;
+}
+.cards-container {
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  transform: perspective(90px) rotateY(-1deg);
+  padding: 10px;
+}
+
+.cards-row {
+  display: flex;
+  overflow: visible;
+  animation: slideright 10s infinite;
+  margin: 0px;
+}
+
+.cards-row:last-of-type {
+  animation: slideleft 10s infinite;
+}
+
+.cards-row:hover {
+  animation-play-state: paused;
+}
+
+.card {
+  height: 300px;
+  width: 900px;
+  border-radius: 10px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card:hover {
+  border-color: rgb(163, 184, 90);
+  transform: translateZ(0px) scale(1.04);
+  box-shadow: rgba(191, 238, 24, 0.9) 0px 0px 24px 0px;
+}
+
+.card a {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.hide-left {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 40%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 700px;
+  width: 200px;
+  top: 115px;
+  left: 35%;
+  z-index: 10;
+  position: absolute;
+}
+
+.hide-right {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 30%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 100%
+  );
+  height: 800px;
+  width: 200px;
+  top: 115px;
+  right: 0px;
+  z-index: 10;
+  position: absolute;
+}
+
+.join-text {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  font-size: 40px;
+}
+
+#scrollToTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#scrollToTop img {
+  height: 80px;
+}
+
+
+.dwlqFI {
+  margin: 0px;
+  padding: 0px 0px 40px;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  display: flex;
+  flex-basis: auto;
+  flex-shrink: 0;
+  min-height: 0px;
+  min-width: 0px;
+  max-width: 100%;
+  z-index: 0;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.dDLhtR {
+  color: rgb(163, 163, 163);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 28px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-out 0s;
+  padding: 19px 95px 19px 26px;
+  margin: 10px 0;
+}
+
+.haHbTN {
+  font-size: 19px;
+}
+
+.giXNzI {
+  display: flex;
+}
+
+.giXNzI li {
+  margin-right: 50px;
+}
+
+.GLydC {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.gDYkWk {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 0px;
+  min-width: 0px;
+  max-width: 100%;
+  z-index: 0;
+  position: relative;
+  width: fit-content;
+  top: -60px;
+  left: 67%;
+}
+
+.bejKGh {
+  background: rgb(0, 102, 255);
+  padding: 10px 24px;
+  border-radius: 32px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.15s ease-out 0s;
+  user-select: none;
+}
+
+.roadmap-image {
+  width: 100%; 
+  margin-top: 20px;
+  margin-bottom: -5px;
+  display: block;
+}
+
+#roadmap {
+  margin-top: 300px;
+}
+
+#howto-img-2nd {
+  margin-left: 30%;
+}
+#subtext-teemo {
+  display: none;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(10%);
+  }
+  70% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(-10%);
+  }
+  70% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes sliderightmobile {
+  0% {
+    transform: translateX(20%);
+  }
+  70% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+@keyframes slideleftmobile {
+  0% {
+    transform: translateX(-20%);
+  }
+  70% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #cover {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+  #enter {
+    display: inline;
+  }
+  .cover-text b {
+    font-size: 60px;
+  }
+  .connect {
+    text-shadow: none;
+    z-index: 100;
+  }
+  .explore {
+    z-index: 100;
+  }
+  #howto-img-2nd {
+    margin-left: 0;
+  }
+  .card-holder {
+    width: 100%;
+    height: 500px;
+    margin-left: -2px;
+  }
+  .cards-container {
+    width: 200%;
+    margin: 50px 0 0 0;
+    padding: 0;
+    margin-left: -50%;
+  }
+  .cards-row {
+    animation: sliderightmobile 15s infinite;
+  }
+
+  .cards-row:last-of-type {
+    animation: slideleftmobile 15s infinite;
+  }
+  .card {
+    height: 180px;
+  }
+  .join-text {
+    font-size: 28px;
+  }
+  .cover-text-container {
+    width: 90%;
+    margin: 0;
+    position: absolute;
+    top: 430px;
+    left: 20px;
+    text-shadow: 2px 1px 8px #ffffff;
+  }
+  .cover-text {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  .cover-subtext {
+    color: rgb(141, 141, 141);
+    font-size: 17px;
+    margin: 3px 0;
+  }
+  .hide-left {
+    width: 30px;
+    left: -10px;
+    top: 60px;
+  }
+  .hide-right {
+    width: 10px;
+    right: 0;
+    top: 60px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 30%,
+      rgb(255, 255, 255) 90%,
+      rgb(255, 255, 255) 100%
+    );
+  }
+  #scrollToTop {
+    display: none;
+  }
+  #roadmap {
+    margin-top: 100px;
+  }
+  .GLydC {
+    width: 90%;
+  }
+}

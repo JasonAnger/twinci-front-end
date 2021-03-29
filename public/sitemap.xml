@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://twinci.io</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://twinci.io/blog</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://twinci.io/instructions-on-how-to-connect-metamask-to-binance-smart-chain-bsc</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://twinci.io/faq</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://twinci.io/how-to-create-nfts-on-twinci</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://twinci.io/instructions-on-how-to-buy-and-sell-nft-collectibles-on-twinci</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>

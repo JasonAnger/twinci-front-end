@@ -1,0 +1,209 @@
+#following {
+    min-height: 800px;
+    background-color: #fafafa;
+    display: flex;
+    padding: 150px 0;
+}
+
+.item-header {
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-bottom: 10px;
+}
+
+.item-creator {
+    display: flex;
+    width: 100%;
+}
+
+.first-person,.second-person {
+    margin-left: -15px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: gray;
+}
+
+.items-container {
+    width: calc( 100% );
+    display: flex;
+    justify-content: center;
+}
+
+.items-row {
+    display: flex;
+    justify-content: start;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+.onSaleItem {
+    width: 700px;
+    border-radius: 5px;
+    border: 1.5px solid #e6e6e6;
+    background-color: #fff;
+    margin: 8px;
+}
+
+.item-header {
+    display: flex;
+}
+
+.item-image {
+    width: 700px;
+    height: 700px;
+    margin: 0.5px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.button-container {
+    display: flex;
+    margin: 8px;
+}
+
+.button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    overflow: visible;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.likeButton:hover .likeIcon {
+    transform: scale(1.1);
+    animation: shake 0.3s infinite;
+}
+
+.icon {
+    height: 23px;
+    width: 40px;
+}
+
+.likeIcon path {
+    stroke: #565656;
+    fill: transparent;
+    stroke-width: 40;
+    transition: all 0.3s ease;
+}
+
+.commentIcon path {
+    stroke: #565656;
+    fill: transparent;
+    stroke-width: 40;
+}
+
+.shareIcon path {
+    stroke: #565656;
+    fill: transparent;
+    stroke-width: 40;
+}
+
+.commentButton:hover .commentIcon path {
+    stroke: #000000;
+    fill: #000000;
+}
+
+.shareButton:hover .shareIcon path {
+    stroke: #000000;
+    fill: #000000;
+    stroke-width: 10;
+}
+
+.moreButton {
+    position: relative;
+    right: 14px;
+}
+
+.moreButton svg {
+    height: 40px;
+    width: 20px;
+}
+
+.like-number {
+    margin-left: 14px;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.item-name {
+    font-size: 17px;
+    margin-left: 14px;
+}
+
+.item-price {
+    font-size: 17px;
+    margin-left: 14px;
+    font-weight: normal;
+}
+
+.commentForm {
+    display: flex;
+}
+
+.comment-box {
+    position: relative;
+    display: block;
+    margin: 8px auto;
+    border: none;
+    margin-left: 14px;
+    width: calc(100% - 114px );
+    height: 36px;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 10px 15px 0px 15px;
+    background-color: #e6e6e6;
+}
+
+.comment-box:focus {
+    outline: none;
+}
+
+.submitComment {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    margin-bottom: 10px;
+    border: none;
+    background: none;
+    color: #a3b85a;
+}
+
+#banner {
+    width: 283px;
+    background-color: teal;
+    margin: 10px 0;
+    height: calc( 100% - 300px);
+    position: absolute;
+    right: calc(1000px - 620px);
+    top: 150px;
+    border-radius: 30px;
+}
+
+#banner h2 {
+    color: white;
+    transform: rotate(90deg);
+    margin-left: 0;
+    margin-top: 300px;
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    
+    20% {
+        transform: rotate(-15deg);
+    }
+  
+    60% {
+        transform: rotate(15deg);
+    }
+  }
