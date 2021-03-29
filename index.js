@@ -13,6 +13,10 @@ app.get('/', async (req,res) => {
     res.render('index', {isHome: false})
 })
 
+app.get('/user', async (req,res) => {
+    res.render('user', {isHome: false})
+})
+
 app.listen(port, async () => {
     console.log('Running on port ' + port)
 })
